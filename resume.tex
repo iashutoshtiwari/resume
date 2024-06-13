@@ -1,0 +1,194 @@
+%-------------------------
+% Resume in Latex
+% Author : Ashutosh Tiwari
+% Based off of: https://github.com/jakegut/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper, 11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{ \vspace{-2pt}\scshape\raggedright\large }{}{0em}{}[
+\color{black}
+\titlerule
+\vspace{-3pt}
+]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{ \item\small{ {#1 \vspace{-2pt}} } }
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{1pt}
+\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+	\textbf{#1}       & #2                 \\
+	\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}
+\vspace{-3pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{ \item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+	\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}
+\vspace{-2pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{ \item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+	\small#1 & #2 \\
+\end{tabular*}
+\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}
+\vspace{-2pt}}
+
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}
+\vspace{-2pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%
+
+\begin{document}
+	\begin{center}
+		{\Huge \scshape Ashutosh \textbf{Tiwari}} \\
+		\vspace{8pt}
+		\small +xx-xxxxxxxxxx $|$
+		\href{mailto:xxxx@xxxx.xxxx}{\underline{xxxx@xxxx.xxxx}}
+		$|$
+		\href{https://linkedin.com/in/iashutoshtiwari}{\underline{linkedin.com/in/iashutoshtiwari}}
+		$|$
+		\href{https://github.com/iashutoshtiwari}{\underline{github.com/iashutoshtiwari}}
+	\end{center}
+
+	%-----------PROGRAMMING SKILLS-----------
+	\section{Skills}
+	\begin{itemize}[leftmargin=0.15in, label={}]
+		\small{\item{ \textbf{Languages}{: JavaScript, Java, C++, Python}\vspace{2pt} \\ \textbf{Technologies and Frameworks}{: React, Redux, Node.js, Next.js, Express}\vspace{2pt} \\ \textbf{Other}{: Git, RESTful API, Problem solving, Data structures and algorithms. }\vspace{2pt}\vspace{2pt} }}
+	\end{itemize}
+
+	%-----------EXPERIENCE--------------------
+	\section{Experience}
+	\resumeSubHeadingListStart
+
+	\resumeSubheading {Member of Technical Staff}{Aug. 2021 -- Present} {Mindstix Software Labs}{Pune, MH}
+	\resumeItemListStart \resumeItem
+	{Part of the team responsible for the development of end-to-end e-commerce solutions for Staples Inc. and Amway Taiwan.}
+	\resumeItem
+	{Responsible for implementing new features, supporting existing components, and fixing bugs for cart, checkout, payment, and order confirmation pages.}
+	\resumeItem
+	{Created high-quality and responsive UI components using React, Redux, and NextJS framework.}
+	\resumeItem
+	{Worked on multiple 3rd-party payment integrations including PayPal, VISA, and Apple Pay across projects.}
+	\resumeItem
+	{Ensured accessibility and cross-browser compatibility of the web pages in compliance with the Americans with Disabilities Act (ADA) and other standards.}
+	\resumeItem {Mentored new team members as SME for cart-checkout domain.}
+	\resumeItem
+	{Integrated backend APIs with the frontend and created Node layer APIs to format and combine client’s API(s) response as per requirements.}
+	\resumeItem
+	{Integrated Google’s reCAPTCHA v3 in the Amway application to prevent bots and enhance security.}
+	\resumeItem
+	{Developed the new Rewards program for cart and checkout for Staples Inc., which increased customer loyalty and retention.}
+	\resumeItem
+	{Worked on the end-to-end redesign of Staples's checkout page for all view-ports, along with improving overall core web vitals of the page.}
+	\resumeItemListEnd
+
+	\resumeSubheading {Programmer Analyst Trainee}{Aug. 2020 -- Mar. 2021}
+	{Cognizant}{Coimbatore, TN} \resumeItemListStart \resumeItem {Worked on the e-commerce application of a retail fashion company as part of the product discovery and merchandising Pod.}
+	\resumeItem {Implemented product search functionality.} \resumeItem {Worked on product discovery features such as sort and filter.}
+	\resumeItemListEnd
+
+	\resumeSubheading {Intern}{Jan. 2020 -- May. 2020} {Cognizant}{Pune, MH}
+	\resumeItemListStart \resumeItem
+	{Completed training in various frontend technologies and languages such as HTML5, CSS3, JavaScript, React, Redux, Webpack and SASS gaining proficiency and confidence in web development.}
+	\resumeItem
+	{Developed a small e-commerce application using React and Redux with a team of 4 members as a capstone project.}
+	\resumeItem
+	{Learned and applied best practices and standards for coding, testing, and documentation, following the agile methodology and using tools such as Git, Jira.}
+	\resumeItemListEnd
+
+	\resumeSubHeadingListEnd
+
+	%-----------EDUCATION-----------
+	\section{Education}
+	\resumeSubHeadingListStart \resumeSubheading {Chandigarh University}{Mohali, PB}
+	{Bachelor of Engineering in Computer Science}{August 2016 -- July 2020}
+	\resumeSubHeadingListEnd
+
+	%-----------PROJECTS-----------
+
+	% \section{Projects}
+	%     \resumeSubHeadingListStart
+	%       \resumeProjectHeading
+	%           {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+	%           \resumeItemListStart
+	%             \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+	%             \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+	%             \resumeItem{Visualized GitHub data to show collaboration}
+	%             \resumeItem{Used Celery and Redis for asynchronous tasks}
+	%           \resumeItemListEnd
+	%       \resumeProjectHeading
+	%           {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+	%           \resumeItemListStart
+	%             \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+	%             \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+	%             \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+	%             \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+	%           \resumeItemListEnd
+	%     \resumeSubHeadingListEnd
+
+	%-------------------------------------------
+\end{document}
