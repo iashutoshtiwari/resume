@@ -8,4 +8,4 @@ You can compile it on [Overleaf](https://www.overleaf.com/project).
 
 ## Screenshot
 
-![App Screenshot](resume.png)
+![App Screenshot](resume.jpg)
